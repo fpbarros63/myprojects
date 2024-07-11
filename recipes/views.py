@@ -8,7 +8,7 @@ def home(request):
     }, status='201')
 
 def sobre(request):
-    return HttpResponse('SOBRE')
+    return render(request, 'recipes/sobre.html')
 
 def contato(request):
-    return HttpResponse('CONTATO')
+    return render(request, 'recipes/contato.html')
